@@ -69,4 +69,44 @@ export const odsAlumnos: InterfazSostenible[] = [
     odsfavorito: ListaODS.ods16,
     estado: "En proceso",
   },
+  {
+    id: 9,
+    odsfavorito: ListaODS.ods7,
+    estado: "Pendiente",
+  },
+  {
+    id: 10,
+    odsfavorito: ListaODS.ods8,
+    estado: "Aprobado",
+  },
+  {
+    id: 11,
+    odsfavorito: ListaODS.ods9,
+    estado: "Rechazado",
+  },
+  {
+    id: 12,
+    odsfavorito: ListaODS.ods10,
+    estado: "En proceso",
+  },
+  {
+    id: 13,
+    odsfavorito: ListaODS.ods11,
+    estado: "Aprobado",
+  },
+  {
+    id: 14,
+    odsfavorito: ListaODS.ods12,
+    estado: "Pendiente",
+  },
+  {
+    id: 15,
+    odsfavorito: ListaODS.ods14,
+    estado: "En proceso",
+  },
+  {
+    id: 16,
+    odsfavorito: ListaODS.ods15,
+    estado: "Aprobado",
+  },
 ];
