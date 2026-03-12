@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/vtrmme/sostenibilidad-ts1#readme",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
