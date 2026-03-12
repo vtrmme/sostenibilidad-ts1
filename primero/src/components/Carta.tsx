@@ -1,4 +1,4 @@
-import type { InterfazSostenible } from "../data/Ods.js";
+import type { InterfazSostenible } from "../data/Ods";
 
 interface CartaProps {
   itemsOds: InterfazSostenible;

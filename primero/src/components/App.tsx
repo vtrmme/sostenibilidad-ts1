@@ -1,5 +1,5 @@
-import { Carta } from "./Carta.js";
-import { odsAlumnos } from "../data/Ods.js";
+import { Carta } from "./Carta";
+import { odsAlumnos } from "../data/Ods";
 import "./App.css";
 
 function App() {
