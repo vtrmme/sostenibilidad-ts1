@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background: #0a0a0f;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 60px;
+  padding-left: 10px;
+  border-left: 4px solid #00ff88;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.header h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2px;
+  animation: slideUp 0.7s ease-out;
+}
+
+.Card {
+  background: #ffffff;
+  padding: 28px;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.Card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #00ff88;
+  transition: height 0.3s ease;
+}
+
+.Card:hover::before {
+  height: 100%;
+}
+
+.Card:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+  transform: translateX(4px);
+}
+
+.Card h2 {
+  color: #111;
+  margin-bottom: 14px;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.ods-title {
+  color: #555;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.ods-estado {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: #888;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.ods-estado strong {
+  color: #666;
+}
+
+.estado-aprobado {
+  background-color: transparent;
+  color: #00ff88;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #00ff88;
+}
+
+.estado-en-proceso {
+  background-color: transparent;
+  color: #ffcc00;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #ffcc00;
+}
+
+.estado-pendiente {
+  background-color: transparent;
+  color: #ff4d6d;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #ff4d6d;
+}
+
+.estado-rechazado {
+  background-color: transparent;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Card {
+    padding: 22px;
+  }
+}
